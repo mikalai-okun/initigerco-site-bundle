@@ -1,0 +1,15 @@
+services:
+  intiger_co.site_manager:
+          class: InitigerCo\Bundle\SiteBundle\Manager\SiteManager
+
+  intiger_co.current_site_listener:
+      class: InitigerCo\Bundle\SiteBundle\EventListener\CurrentSiteListener
+      arguments:
+          - "@intiger_co.site_manager"
+          - "@doctrine.orm.entity_manager"
+          - "%site_base_host%"
+      tags:
+          -
+              name: kernel.event_listener
+              method: onKernelRequest
+              event: kernel.request
