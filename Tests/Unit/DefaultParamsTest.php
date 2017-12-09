@@ -1,6 +1,6 @@
 <?php
 
-namespace InitigerCo\Bundle\SiteBundle\Tests\Controller;
+namespace InitigerCo\Bundle\SiteBundle\Tests\Unit;
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 
@@ -12,6 +12,6 @@ class DefaultParamsTest extends WebTestCase
 
         $myHost = $client->getKernel()->getContainer()->getParameter('site_base_host');
 
-        dump($myHost);
+        $this->assertNotEmpty($myHost);
     }
 }
