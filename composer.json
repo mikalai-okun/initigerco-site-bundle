@@ -16,7 +16,7 @@
   },
   "autoload": {
     "psr-4": {
-      "InitigerCo\\Bundle\\SiteBundle": ""
+      "InitigerCo\\Bundle\\SiteBundle\\": ""
     }
   },
   "target-dir" : "InitigerCo/Bundle/SiteBundle",
