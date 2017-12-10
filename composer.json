@@ -1,5 +1,5 @@
 {
-  "name" : "InitigerCo/SiteBundle",
+  "name" : "initigerco/site-bundle",
   "description" : "A site bundle to support multi-domain set-up.",
   "type" : "symfony-bundle",
   "authors" : [{
