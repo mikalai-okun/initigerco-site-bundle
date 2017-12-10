@@ -4,23 +4,30 @@ Simple bundle to enable multi-domain support for Symfony 3 Framework.
 
 ## Installation
 
-Installation is simple 3 steps:
+Installation is simple 4 steps:
 
 - Add composer package to your project.
 
-```$xslt
+```
 composer require mikalai-okun/initigerco-site-bundle
 ```
 
-- Edit your Parameter, by adding:
-```$xslt
+- Add to your **AppKernel.php** file:
+```
+new InitigerCo\Bundle\SiteBundle\InitigerCoSiteBundle(),
+```
+
+- Edit your **parameters.yml**, by adding:
+```
 site_base_host: '127.0.0.1:8080' # Add your domain and port(optinal) Don't include http
 ```
 
 - Update your database schema. 
-```$xslt
+```
 php bin/console doctrine:schema:update
 ```
+
+You would need add record in your database with default site information, please check fixture example below.
 
 **All Done.**
 
