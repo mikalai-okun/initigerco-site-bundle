@@ -1,0 +1,25 @@
+{
+  "name" : "InitigerCo/SiteBundle",
+  "description" : "A site bundle to support multi-domain set-up.",
+  "type" : "symfony-bundle",
+  "authors" : [{
+    "name" : "Mikalai Okun",
+    "email" : "mikalai@initiger.com"
+  }],
+  "keywords" : [
+    "InitigerCo Site bundle"
+  ],
+  "license" : [
+    "MIT"
+  ],
+  "require" : {
+  },
+  "autoload": {
+    "psr-4": {
+      "InitigerCo\\Bundle\\SiteBundle": ""
+    }
+  },
+  "target-dir" : "InitigerCo/Bundle/SiteBundle",
+  "repositories" : [{
+  }]
+}
